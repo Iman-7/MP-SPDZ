@@ -1,4 +1,4 @@
-n =64
+n =4194304
 
 a = Array(n, sint)
 b = Array(n, sint)
