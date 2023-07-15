@@ -2,7 +2,7 @@ n =4194304
 
 # sbitvec(elements=None, length=None, input_length=None)
 
-a = sbitvec(0, n, 64)
-b = sbitvec(0, n, 64)
+a = sbitvec(sint(0), n, 64)
+b = sbitvec(sint(0), n, 64)
 
 c = (a != b).elements()
