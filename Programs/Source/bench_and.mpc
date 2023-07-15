@@ -1,9 +1,9 @@
-n =4096
+n =4194304
 
 a = Array(n, sint)
 b = Array(n, sint)
 c = Array(n, sint)
 
-@for_range(n)
+@for_range_opt(n)
 def f(i):
     c[i] = a[i].bit_and(b[i])
