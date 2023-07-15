@@ -1,9 +1,9 @@
-n =16384
+n =1024
 
 # sbitvec(elements=None, length=None, input_length=None)
 y = sint(0)
 
-a = sbitvec(y, n, 64)
-b = sbitvec(y, n, 64)
+a = sbitvec(y, 16, 64)
+b = sbitvec(y, 16, 64)
 
 c = (a + b).elements()
