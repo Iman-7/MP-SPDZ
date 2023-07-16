@@ -14,8 +14,11 @@ with open(filePath, 'r') as file:
 # print ("Input size before:" + data[0])
 
 if filePath.endswith("B.mpc"):
-    data[1] = "a = sbitintvec(sb64(0)," + sys.argv[2] + ", 64)" + '\n'
-    data[2] = "b = sbitintvec(sb64(0)," + sys.argv[2] + ", 64)" + '\n'
+     
+    data[2] = "a = siv64(" + sys.argv[2] + ")" + '\n'
+    data[3] = "b = siv64(" + sys.argv[2] + ")" + '\n'
+    # data[1] = "a = sbitintvec(sb64(0)," + sys.argv[2] + ", 64)" + '\n'
+    # data[2] = "b = sbitintvec(sb64(0)," + sys.argv[2] + ", 64)" + '\n'
 
 else:
     data[0] = 'n =' + sys.argv[2] + '\n'

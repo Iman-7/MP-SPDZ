@@ -1,5 +1,6 @@
 sb64 = sbits.get_type(64)
-a = sbitintvec(sb64(0),4194304, 64)
-b = sbitintvec(sb64(0),4194304, 64)
+siv64 = sbitintvec.get_type(64)
+a = siv64(16)
+b = siv64(16)
 
 c = (a + b).elements()
