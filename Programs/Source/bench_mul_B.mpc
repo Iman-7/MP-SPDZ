@@ -1,6 +1,7 @@
-y = sint(0) 
-a = sbitintvec(y,4194304, 64)
-b = sbitintvec(y,4194304, 64)
+sb64 = sbits.get_type(64)
+siv64 = sbitintvec.get_type(64)
+a = siv64(4194304)
+b = siv64(4194304)
 # sbitvec(elements=None, length=None, input_length=None)
 
 c = (a * b).elements()
