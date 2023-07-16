@@ -1,5 +1,6 @@
-a = sbitintvec(sint(0), 16, 64)
-b = sbitintvec(sint(0), 16, 64)
+y = sint(0) 
+a = sbitintvec(y,4194304, 64)
+b = sbitintvec(y,4194304, 64)
 # sbitvec(elements=None, length=None, input_length=None)
 
 c = (a.bit_xor(b)).elements()

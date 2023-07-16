@@ -1,4 +1,5 @@
-a = sbitintvec(sint(0), 16, 64)
-b = sbitintvec(sint(0), 16, 64)
+y = sint(0)
+a = sbitintvec(y,4194304, 64)
+b = sbitintvec(y,4194304, 64)
 
 c = (a.bit_and(b)).elements()
