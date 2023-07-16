@@ -17,8 +17,8 @@ if filePath.endswith("B.mpc"):
      
     # data[2] = "a = siv64(" + sys.argv[2] + ")" + '\n'
     # data[3] = "b = siv64(" + sys.argv[2] + ")" + '\n'
-    data[0] = "a = sbitintvec(sb64(0)," + sys.argv[2] + ", 64)" + '\n'
-    data[1] = "b = sbitintvec(sb64(0)," + sys.argv[2] + ", 64)" + '\n'
+    data[0] = "a = sbitintvec(None," + sys.argv[2] + ", 64)" + '\n'
+    data[1] = "b = sbitintvec(None," + sys.argv[2] + ", 64)" + '\n'
 
 else:
     data[0] = 'n =' + sys.argv[2] + '\n'
