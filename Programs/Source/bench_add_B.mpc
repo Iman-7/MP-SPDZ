@@ -1,5 +1,4 @@
-y = sint(0) 
-a = sbitintvec(y,4194304, 64)
-b = sbitintvec(y,4194304, 64)
+a = sbitintvec(0,1024, 64)
+b = sbitintvec(0,1024, 64)
 
 c = (a + b).elements()
