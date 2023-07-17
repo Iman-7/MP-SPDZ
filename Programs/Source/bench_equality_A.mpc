@@ -4,11 +4,11 @@ a = Array(n, sint)
 b = Array(n, sint)
 c = Array(n, sint)
 
-@for_range_opt(n)
+@for_range_opt_multithread(n)
 def f(i):
     a[i] = 0
     b[i] = 0
 
-@for_range_opt(n)
+@for_range_opt_multithread(n)
 def f(i):
     c[i] = (a[i] == b[i])

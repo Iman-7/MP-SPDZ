@@ -4,4 +4,4 @@ a = siv64(4194304)
 b = siv64(4194304)
 # sbitvec(elements=None, length=None, input_length=None)
 
-c = (a != b).elements()
+c = (a > b).elements()
