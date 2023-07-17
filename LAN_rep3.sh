@@ -12,9 +12,9 @@ for ROWS in 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2
 
 do
     
-    ((cd ~/MP-SPDZ; python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS; ./compile.py -R 64 Programs/Source/${mpcfile}.mpc; ./replicated-ring-party.x --my-port 5101 -h mp-spdz-aws-1 0 ${mpcfile}) >> ./results/${mpcfile}_rep3_1.txt 2>> ./results/${mpcfile}_rep3_1.txt) \
-    & ((ssh mp-spdz-aws-2 "cd ~/MP-SPDZ; python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS; ./compile.py -R 64 Programs/Source/${mpcfile}.mpc; ./replicated-ring-party.x --my-port 5102 -h mp-spdz-aws-1 1 ${mpcfile};") >> ./results/${mpcfile}_rep3_2.txt 2>> ./results/${mpcfile}_rep3_2.txt) \
-    & ((ssh mp-spdz-aws-3 "cd ~/MP-SPDZ; python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS; ./compile.py -R 64 Programs/Source/${mpcfile}.mpc; ./replicated-ring-party.x --my-port 5103 -h mp-spdz-aws-1 2 ${mpcfile};") >> ./results/${mpcfile}_rep3_3.txt 2>> ./results/${mpcfile}_rep3_3.txt) \
+    ((cd ~/MP-SPDZ; python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS; ./compile.py -R 64 --batch-size 1024 Programs/Source/${mpcfile}.mpc; ./replicated-ring-party.x --my-port 5101 -h mp-spdz-aws-1 0 ${mpcfile}) >> ./results/${mpcfile}_rep3_1.txt 2>> ./results/${mpcfile}_rep3_1.txt) \
+    & ((ssh mp-spdz-aws-2 "cd ~/MP-SPDZ; python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS; ./compile.py -R 64 --batch-size 1024 Programs/Source/${mpcfile}.mpc; ./replicated-ring-party.x --my-port 5102 -h mp-spdz-aws-1 1 ${mpcfile};") >> ./results/${mpcfile}_rep3_2.txt 2>> ./results/${mpcfile}_rep3_2.txt) \
+    & ((ssh mp-spdz-aws-3 "cd ~/MP-SPDZ; python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS; ./compile.py -R 64 --batch-size 1024 Programs/Source/${mpcfile}.mpc; ./replicated-ring-party.x --my-port 5103 -h mp-spdz-aws-1 2 ${mpcfile};") >> ./results/${mpcfile}_rep3_3.txt 2>> ./results/${mpcfile}_rep3_3.txt) \
     && fg && fg
     wait
 
