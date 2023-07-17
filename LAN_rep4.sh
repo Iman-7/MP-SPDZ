@@ -8,8 +8,8 @@ touch ./results/${mpcfile}_rep4_2.txt
 touch ./results/${mpcfile}_rep4_3.txt
 touch ./results/${mpcfile}_rep4_4.txt
 
-# for ROWS in 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304
-for ROWS in 1 2 4 8 16 32 64
+for ROWS in 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304
+# for ROWS in 1 2 4 8 16 32 64
 
 do
     
