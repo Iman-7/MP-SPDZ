@@ -31,8 +31,9 @@ else:
 
     data[0] = 'n =' + sys.argv[2] + '\n'
 
+print ("############### Testing with no optmization input size = " + sys.argv[2])
 
-print ("############### Testing with number of threads = 64  input size = " + sys.argv[2])
+# print ("############### Testing with number of threads = 64  input size = " + sys.argv[2])
 
 # and write everything back
 with open(filePath, 'w') as file:
