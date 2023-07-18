@@ -4,6 +4,6 @@ a = Array(n, sint)
 b = Array(n, sint)
 c = Array(n, sint)
 
-@for_range_opt(n)
+@for_range(n)
 def f(i):
     c[i] = a[i].bit_and(b[i])
