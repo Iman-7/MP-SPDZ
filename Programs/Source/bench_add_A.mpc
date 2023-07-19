@@ -4,6 +4,6 @@ a = Array(n, sint)
 b = Array(n, sint)
 c = Array(n, sint)
 
-@for_range(n)
+@for_range_opt_multithread(64,n)
 def f(i):
     c[i] = a[i] + b[i]

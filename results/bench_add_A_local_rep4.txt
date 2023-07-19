@@ -1,0 +1,169 @@
+############### Testing with no optmization input size = 1024
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: 0859f72c6ca67cf8669ce93a3e10d5993520bfc081b9b3d3d0fa489efe918233
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 2048
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: cb3a8d653c690e514a43fcd2d1cf08d3cb96964a656c3af862e94764876778e6
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 4096
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: cd6b0aff23f9a7e14a2d58cef61c7464efeab467aec96cfaad7952901788ead9
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 8192
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: 73ee1edf76647ce7915650909c11e778dc8858720f198e631ad82a9e68db7abe
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 16384
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: 8e7d4bcf967046d1352522c66b1327b8f8c16953f1b3283ede70d1e28c379939
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 32768
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: fb70779d730ed14f1ef519cf9252e01e2388133911418688252cbb9fe83a9bcb
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 65536
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: d0f3256fd916d143dcd764c6cd9cd1cb73f17b4b98624458547a85a9d3f0068e
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 131072
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: 26f3626aa3319712a8b19ecf6b67f8ba059a34d109108d22176029791647964e
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 262144
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: 68f6f72128937b2d5659411d74a55700395573fc2d8fc2cfb44002f6280ea74b
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 524288
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: de3f8a824802125e1407261822e86b4c4f3b207519be550e3b9fbe7dda4c9a0d
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 1048576
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: ea3e6f3cd28c7f0189f45395548a6975114dbdc91885f6cceea6f0254fe5d851
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 2097152
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: 58effdf32a4523983ba75176cfabef6c3d0819885e3e0370d88ab66b43956e45
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 4194304
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_add_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_add_A-multithread-1.bc
+Writing to Programs/Schedules/bench_add_A.sch
+Writing to Programs/Bytecode/bench_add_A-0.bc
+Hash: 96d7ea1feaed3ee754116baf2ead15f9750fb035d35e5deec4f6cefb01c383ca
+Program requires at most:
+Creating binary for virtual machine...
+----------------------------------------------

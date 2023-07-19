@@ -1,0 +1,165 @@
+############### Testing with no optmization input size = 1024
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: c567406e2077de8ffe82813b896eecab5c88194123252b33eef89141384d4200
+Program requires at most:
+        1024 integer triples
+          64 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 2048
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: fdc3b5bdf9768b9818e5952e40eedb50142d33ce633f0d98161b48500f6f9f99
+Program requires at most:
+        2048 integer triples
+         192 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 4096
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: 71be017d8a991ee53afbd859b16be959c40735d5ac13820652b048f2541a2fe8
+Program requires at most:
+        4096 integer triples
+         320 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 8192
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: 1b4944b734a08644e61617e50f983ad0d5a8d162de26ad682aa88e049f9e306e
+Program requires at most:
+        8192 integer triples
+         640 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 16384
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: 1782674d9fe70049a76a525998235239156361e43eae34a7db9336d9300ca842
+Program requires at most:
+       16384 integer triples
+        1280 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 32768
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: 21b027ef4cbeb34793415fe067edc075e40dc84a5f3049768895be59b52b2c06
+Program requires at most:
+       32768 integer triples
+        2560 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 65536
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: 5b9a6abdfad21921b2879de350b8557162dd86a275d91cdcd9ef76c04d66ad3d
+Program requires at most:
+       65536 integer triples
+        5056 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 131072
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: 9f87a5afdb64ecae59da501fa5c0d54441348ae6be49924768c55ed95cae0cae
+Program requires at most:
+      131072 integer triples
+       10112 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 262144
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: 12e5db4af06457b2c35aaa1af2926364addbe3d42a723e6023f1c4243f07640f
+Program requires at most:
+      262144 integer triples
+       20224 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 524288
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: 2230fe5484fdbe7ecabdf56cedf68f6ddaf9f3f122efccf9d91f3cda4406ec0f
+Program requires at most:
+      524288 integer triples
+       40384 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 1048576
+clang++ -o Processor/BaseMachine.o Processor/BaseMachine.cpp -I./local/include -march=native  -g -Wextra -Wall -O3 -I. -I./deps -pthread    -DUSE_GF2N_LONG '-DPREP_DIR="Player-Data/"' '-DSSL_DIR="Player-Data/"'  -std=c++11 -Werror  -std=c++17 -fPIC -MMD -MP -c
+Default bit length: 63
+Default security parameter: 40
+Compiling file Programs/Source/bench_mul_A.mpc
+WARNING: Order of memory instructions not preserved, errors possible
+Writing to Programs/Bytecode/bench_mul_A-multithread-1.bc
+Writing to Programs/Schedules/bench_mul_A.sch
+Writing to Programs/Bytecode/bench_mul_A-0.bc
+Hash: 29063eee7fd2797280c93fbeeb49a53dff523b10cf4323dbfa8d05991adc3f47
+Program requires at most:
+     1048576 integer triples
+       80704 virtual machine rounds
+Creating binary for virtual machine...
+----------------------------------------------
+############### Testing with no optmization input size = 2097152
