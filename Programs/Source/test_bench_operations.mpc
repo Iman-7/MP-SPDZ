@@ -1,0 +1,83 @@
+def test(actual, expected):
+
+    # you can reveal a number in order to print it
+
+    actual = actual.reveal()
+    print_ln('expected %s, got %s', expected, actual)
+
+n = 8
+a = Array(n, sint)
+b = Array(n, sint)
+siv64 = sbitintvec.get_type(64)
+c = siv64.from_vec([sbits.get_type(n)(0)] * 64)
+d = siv64.from_vec([sbits.get_type(n)(0)] * 64)
+
+@for_range_opt_multithread(64,n)
+def f(i):
+    a[i] = i
+    b[i] = i
+    c[i] = i
+    d[i] = i
+
+print_ln("############################ Arithmetic Operations tests ############################")
+print_ln("Testing addition: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test(a[i] + b[i], i + i)
+
+print_ln("Testing multiplication: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test(a[i] * b[i], i * i)
+
+print_ln("Testing AND: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test(a[i].bit_and(b[i]), i & i)
+
+print_ln("Testing XOR: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test(a[i].bit_xor(b[i]), i ^ i)
+
+print_ln("Testing Equality: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test(a[i] == b[i], i == i)
+
+print_ln("Testing Inequality: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test(a[i] > b[i], i > i)
+
+print_ln("############################ Boolean Operations tests ############################")
+
+print_ln("Testing addition: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test((c[i] + d[i]).elements(), i + i)
+
+print_ln("Testing multiplication: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test((c[i] * d[i]).elements(), i * i)
+
+print_ln("Testing AND: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test((c[i].bit_and(d[i])).elements(), i & i)
+
+print_ln("Testing XOR: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test((c[i].bit_xor(d[i]))..elements(), i ^ i)
+
+print_ln("Testing Equality: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test((c[i] == d[i]).elements(), i == i)
+
+print_ln("Testing Inequality: ")
+@for_range_opt_multithread(64,n)
+def f(i):
+    test((c[i] > d[i]).elements(), i > i)

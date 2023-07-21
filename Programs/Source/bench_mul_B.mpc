@@ -1,7 +1,6 @@
-sb64 = sbits.get_type(64)
+n = 1024
 siv64 = sbitintvec.get_type(64)
-a = siv64(4194304)
-b = siv64(4194304)
-# sbitvec(elements=None, length=None, input_length=None)
+a = siv64.from_vec([sbits.get_type(n)(0)] * 64)
+b = siv64.from_vec([sbits.get_type(n)(0)] * 64)
 
 c = (a * b).elements()
