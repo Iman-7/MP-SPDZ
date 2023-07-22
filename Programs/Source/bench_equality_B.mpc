@@ -3,4 +3,4 @@ siv64 = sbitintvec.get_type(64)
 a = siv64.from_vec([sbits.get_type(n)(0)] * 64)
 b = siv64.from_vec([sbits.get_type(n)(0)] * 64)
 
-c = (a == b).elements()
+c = (a == b).bit_decompose()

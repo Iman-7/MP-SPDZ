@@ -10,7 +10,7 @@ touch ./results/${mpcfile}_local_rep3.txt
 
 for ROWS in 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304
 do  
-    python inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS >> ./results/${mpcfile}_local_rep3.txt 
+    python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS >> ./results/${mpcfile}_local_rep3.txt 
     Scripts/compile-run.py -E ring ${mpcfile} >> ./results/${mpcfile}_local_rep3.txt
     echo "----------------------------------------------" >> ./results/${mpcfile}_local_rep3.txt
 done
