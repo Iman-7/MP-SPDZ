@@ -31,8 +31,6 @@ if len(data) > 12:
 #    data[0] = 'n =' + sys.argv[2] + '\n'
 
 
-data[0] = 'n =' + sys.argv[2] + '\n'
-
 # print ("############### Testing with input size = " + sys.argv[2])
 
 print ("############### Testing with number of threads = "  + sys.argv[2])
