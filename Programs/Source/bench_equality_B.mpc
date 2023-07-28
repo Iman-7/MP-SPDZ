@@ -1,6 +1,6 @@
-n = 1024
+n =4194304
 siv64 = sbitintvec.get_type(64)
 a = siv64.from_vec([sbits.get_type(n)(0)] * 64)
 b = siv64.from_vec([sbits.get_type(n)(0)] * 64)
 
-c = (a == b).bit_decompose()
+c = (a == b).elements()

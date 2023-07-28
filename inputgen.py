@@ -24,16 +24,17 @@ with open(filePath, 'r') as file:
 #     # data[1] = "b = sbitintvec(None," + sys.argv[2] + ", 64)" + '\n'
 
 # else:
-data[0] = 'n = 4194304' + '\n'
-data[6] = "@for_range_opt_multithread(" + sys.argv[2] + ",n)" + '\n'
-if len(data) > 12: 
-    data[11] = "@for_range_opt_multithread(" + sys.argv[2] + ",n)" + '\n'
+# data[0] = 'n = 4194304' + '\n'
+# data[6] = "@for_range_opt_multithread(" + sys.argv[2] + ",n)" + '\n'
+# if len(data) > 12: 
+#     data[11] = "@for_range_opt_multithread(" + sys.argv[2] + ",n)" + '\n'
 #    data[0] = 'n =' + sys.argv[2] + '\n'
 
+data[0] = 'n =' + sys.argv[2] + '\n'
 
-# print ("############### Testing with input size = " + sys.argv[2])
+print ("############### Testing with input size = " + sys.argv[2])
 
-print ("############### Testing with number of threads = "  + sys.argv[2])
+# print ("############### Testing with number of threads = "  + sys.argv[2])
 
 # and write everything back
 with open(filePath, 'w') as file:
