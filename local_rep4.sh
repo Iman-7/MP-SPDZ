@@ -9,9 +9,12 @@ mkdir -p results
 touch ./results/${mpcfile}_local_rep4.txt
 #Testing with the rep4 protocoal
 
-for ROWS in 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304
+for ROWS in 4194304 # 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304
 do  
-    python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS >> ./results/${mpcfile}_local_rep4.txt 
-    Scripts/compile-run.py -E rep4-ring ${mpcfile} >> ./results/${mpcfile}_local_rep4.txt
-    echo "----------------------------------------------" >> ./results/${mpcfile}_local_rep4.txt
+    for THREADS in 1 2 4 8 16 32 64
+    do
+        python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $THREADS >> ./results/${mpcfile}_local_rep4.txt 
+        Scripts/compile-run.py -E rep4-ring ${mpcfile} >> ./results/${mpcfile}_local_rep4.txt
+        echo "----------------------------------------------" >> ./results/${mpcfile}_local_rep4.txt
+    done
 done

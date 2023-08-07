@@ -30,11 +30,13 @@ with open(filePath, 'r') as file:
 #     data[11] = "@for_range_opt_multithread(" + sys.argv[2] + ",n)" + '\n'
 #    data[0] = 'n =' + sys.argv[2] + '\n'
 
-data[0] = 'n =' + sys.argv[2] + '\n'
+# data[0] = 'n =' + sys.argv[2] + '\n'
+data[2] = '@multithread(' + sys.argv[2] + ')' + '\n'
 
-print ("############### Testing with input size = " + sys.argv[2])
 
-# print ("############### Testing with number of threads = "  + sys.argv[2])
+# print ("############### Testing with input size = " + sys.argv[2])
+
+print ("############### Testing with number of threads = "  + sys.argv[2])
 
 # and write everything back
 with open(filePath, 'w') as file:
