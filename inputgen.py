@@ -31,7 +31,7 @@ with open(filePath, 'r') as file:
 #    data[0] = 'n =' + sys.argv[2] + '\n'
 
 # data[0] = 'n =' + sys.argv[2] + '\n'
-data[2] = '@multithread(' + sys.argv[2] + ')' + '\n'
+data[2] = '@multithread(' + sys.argv[2] + ', n/' + sys.argv[2] +')' + '\n'
 
 
 # print ("############### Testing with input size = " + sys.argv[2])
