@@ -10,6 +10,6 @@ touch ./results/${mpcfile}_local.txt
 for ROWS in 1024 2048 4096 8192 16384 32768 65536 131072 262144 524288 1048576 2097152 4194304
 do  
     python3 inputgen.py "./Programs/Source/${mpcfile}.mpc" $ROWS >> ./results/${mpcfile}_local.txt 
-    time Scripts/compile.py -R 64 ${mpcfile} >> ./results/${mpcfile}_local.txt
+    (time ./compile.py -R 64 ${mpcfile}) 2>> ./results/${mpcfile}_local.txt >> ./results/${mpcfile}_local.txt
     echo "----------------------------------------------" >> ./results/${mpcfile}_local.txt
 done
