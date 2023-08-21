@@ -3190,7 +3190,7 @@ sgf2n.bit_type = sgf2n
 class _bitint(Tape._no_truth):
     bits = None
     log_rounds = False
-    linear_rounds = False
+    linear_rounds = True
     comp_result = staticmethod(lambda x: x)
 
     @staticmethod

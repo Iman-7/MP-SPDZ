@@ -1,8 +1,7 @@
 n =4194304
 siv64 = sbitintvec.get_type(64)
-@multithread(1)
-def _(__, ___):
-    a = siv64.from_vec([sbits.get_type(n)(0)] * 64)
-    b = siv64.from_vec([sbits.get_type(n)(0)] * 64)
 
-    c = (a + b).elements()
+a = siv64.from_vec([sbits.get_type(n)(0)] * 64)
+b = siv64.from_vec([sbits.get_type(n)(0)] * 64)
+
+c = (a + b).elements()
